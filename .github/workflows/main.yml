@@ -10,7 +10,7 @@ jobs:
   cortex-code-scan:
     runs-on: ubuntu-latest
     # If your secrets are in a specific GitHub Environment, uncomment the line below:
-    # environment: production 
+    environment: Cortex 
 
     env:
       CORTEX_API_URL: https://api-pcscortexcloud.xdr.us.paloaltonetworks.com
