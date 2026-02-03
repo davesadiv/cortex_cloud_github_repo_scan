@@ -13,7 +13,7 @@ jobs:
     environment: Cortex 
 
     env:
-      CORTEX_API_URL: https://api-pcscortexcloud.xdr.us.paloaltonetworks.com
+      CORTEX_API_URL: ${{ secrets.CORTEX_API_URL }}
       # Mapping secrets at the job level ensures they are available to all steps
       CORTEX_API_KEY: ${{ secrets.CORTEX_API_KEY }}
       CORTEX_API_KEY_ID: ${{ secrets.CORTEX_API_KEY_ID }}
